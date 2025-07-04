@@ -2,6 +2,7 @@ Grupo:
 Lucas Padilha
 Vinicius Rodrigues
 Marcos Garcia
+Claudio Gabriel
 
 
 # Kombi Racer
