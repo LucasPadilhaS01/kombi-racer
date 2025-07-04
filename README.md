@@ -1,3 +1,9 @@
+Grupo: 
+Lucas Padilha
+Vinicius Rodrigues
+Marcus Garcia
+
+
 # Kombi Racer
 
 Bem-vindo ao **Kombi Racer**!  
