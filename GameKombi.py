@@ -2,6 +2,7 @@ import pygame
 import random
 import os
 import json
+import sys
 from datetime import datetime
 
 # Inicializa pygame e sistema de áudio
@@ -141,7 +142,7 @@ def menu_principal():
         for evento in pygame.event.get():
             if evento.type == pygame.QUIT:
                 pygame.quit()
-                exit()
+                sys.exit()
             elif evento.type == pygame.MOUSEBUTTONDOWN:
                 mouse_clicou = True
                 if input_rect.collidepoint(evento.pos):
@@ -191,7 +192,7 @@ def menu_principal():
                              sair_rect.centery - sair_text.get_height() // 2))
         if sair_rect.collidepoint(mouse) and mouse_clicou:
             pygame.quit()
-            exit()
+            sys.exit()
 
         pygame.display.flip()
         clock.tick(fps)
@@ -303,7 +304,7 @@ def mostrar_ranking():
         for evento in pygame.event.get():
             if evento.type == pygame.QUIT:
                 pygame.quit()
-                exit()
+                sys.exit()
             elif evento.type == pygame.MOUSEBUTTONDOWN:
                 mouse_clicou = True
                 if evento.button == 4:   # scroll up
@@ -417,7 +418,8 @@ def jogo(nome_jogador):
         for evento in pygame.event.get():
             if evento.type == pygame.QUIT:
                 pygame.quit()
-                exit()
+                sys.exit()
+
         teclas = pygame.key.get_pressed()
         # Movimentação lateral
         if teclas[pygame.K_LEFT] and carro_x > PISTA_X_MIN:
@@ -631,7 +633,8 @@ def tela_final(pontos, nome_jogador):
         for evento in pygame.event.get():
             if evento.type == pygame.QUIT:
                 pygame.quit()
-                exit()
+                sys.exit()
+  
             if evento.type == pygame.KEYDOWN or evento.type == pygame.MOUSEBUTTONDOWN:
                 return
         pygame.display.flip()
