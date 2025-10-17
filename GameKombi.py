@@ -12,7 +12,7 @@ pygame.mixer.init()
 # Define dimensões da tela do jogo
 largura, altura = 1000, 600
 tela = pygame.display.set_mode((largura, altura))
-pygame.display.set_caption("GameKombi")
+pygame.display.set_caption("KombRacer")
 
 # Definições de cores (RGB)
 PRETO = (0, 0, 0)
